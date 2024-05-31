@@ -1,0 +1,90 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="{% static '/interfaz.css' %}">
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  
+<body>
+  {% include 'navbar.html' %}
+
+  <div class="position-relative d-flex justify-content-center align-items-center">
+    <img src="{% static 'media/img/mini_documentos.jpg' %}" class="img-fluid" alt="...">
+
+    <div class="text-center position-absolute ">
+      <h3 class="text-center ">Saluton, Amikoj!</h3>
+      <a href="#seccion2"><button type="button" class="btn btn-success btn-lg ">¡A Conocer!</button></a>
+    </div>
+    
+  </div>
+
+
+
+  <div class="container col-sm-12 col-md-8 col-l-8 col-xl-8 py-5"  id="seccion2">
+    <h1>El Esperanto</h1>
+    <div class="rounded float-end px-4">
+      <div class="text-center">
+        <img
+          src="https://th.bing.com/th/id/R.041953c6de889efb5e47146b36e95b8b?rik=6dk9Fw%2f8wM4C1A&riu=http%3a%2f%2fscihi.org%2fwp-content%2fuploads%2f2015%2f11%2f1024px-1908-kl-t-zamenhof-768x1078.jpg&ehk=dsblweLFVMCawHh9ACZDhONpAMBxC23vSXw74o4bdYs%3d&risl=&pid=ImgRaw&r=0"
+          class="rounded img-thumbnail" style="max-width: 200px;" alt="L.L. Zamenhof">
+      </div>
+      <div class="text-center">
+        <img src="https://th.bing.com/th/id/R.76a827f70bcead09743e47c21fdab1b5?rik=aN3%2btVSPXFiIrw&pid=ImgRaw"
+          class="rounded img-thumbnail" style="max-width: 200px;" alt="Bandera Esperantista">
+      </div>
+    </div>
+
+
+    <p class="text-breakword-wrap">Una de las características distintivas del Esperanto es su simplicidad y regularidad gramatical. La estructura
+      del idioma se basa en reglas consistentes y predecibles, lo que facilita su aprendizaje y uso. Además, utiliza un
+      sistema de raíces léxicas que permite formar nuevas palabras mediante el uso de prefijos y sufijos.</p>
+
+    <h4 class="exp text-center">Ejemplo</h4>
+    <p class="exp text-center fst-italic fw-bolder" style="color: #3E8E41">Esp | Luna - Llenar - Luna llena</p>
+    <p class="exp text-center fst-italic fw-bolder" style="color: #3E8E41">Esper | Luno - Pleni - Plenluno</p>
+
+    <p>El Esperanto se concibió como un idioma neutral, sin favorecer a ninguna cultura o grupo étnico en particular. Se
+      eligieron elementos gramaticales y léxicos comunes en varios idiomas europeos para lograr esta neutralidad y
+      facilitar su comprensión para hablantes de diferentes idiomas maternos.</p>
+    <p>A lo largo de los años, el Esperanto ha desarrollado una comunidad global de hablantes. Se han establecido
+      asociaciones y organizaciones esperantistas en diferentes países, y se llevan a cabo congresos y encuentros para
+      fomentar el uso y el aprendizaje del idioma. Además, existen numerosos recursos educativos disponibles en línea
+      para aquellos que deseen aprender Esperanto.</p>
+    <p>Aunque el Esperanto no tiene el estatus de idioma oficial en ningún país, ha recibido cierto reconocimiento por
+      parte de gobiernos y organizaciones internacionales. La UNESCO, por ejemplo, ha reconocido el Esperanto como una
+      herramienta para promover la diversidad cultural y la comunicación internacional.</p>
+    <p>El Esperanto se utiliza en diversos contextos, como la correspondencia internacional, el turismo, la literatura y
+      la música. Aunque su uso no es tan generalizado como el de los idiomas naturales, sigue siendo una interesante
+      manifestación del deseo de una comunicación más fluida y una mayor comprensión entre las personas, sin importar su
+      origen o lengua materna.</p>
+    <p>El aprendizaje del Esperanto puede brindar beneficios tanto lingüísticos como culturales. Al ser una lengua
+      construida, su gramática y estructura pueden ayudar a los estudiantes a comprender mejor los principios del
+      lenguaje en general. Además, el estudio del Esperanto fomenta la apertura intercultural y el entendimiento entre
+      personas de diferentes nacionalidades.</p>
+    <p>En resumen, el Esperanto es un idioma construido que busca promover la comunicación internacional y el
+      entendimiento mutuo. Aunque su uso no es tan extendido como el de los idiomas naturales, tiene una comunidad
+      activa de hablantes y ofrece beneficios educativos y culturales a aquellos que deciden aprenderlo.</p>
+
+      <a href=""><button type="button" class="btn btn-success btn-lg ">Nuestros Materiales</button></a>
+  </div>
+  <!--Boostrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+{% include 'footer.html' %}
+
+</html>
