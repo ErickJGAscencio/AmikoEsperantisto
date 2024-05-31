@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Libros</title>
-    
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--CSS-->
     <link rel="stylesheet" href="{% static '/interfaz.css' %}">
     <!--Boostrap-->
@@ -14,8 +15,14 @@
   </head>
 <body>
   {% include 'navbar.html' %}
-  <h1>Hello World</h1>
+  <div class="container-fluid bg-light py-5">
+    <div class="container col-sm-12 col-md-8 col-l-8 col-xl-8">  
+        <h1>Libroj</h1>           
+        <ul id="playlist" class="list-unstyled">
+        </ul>
+    </div>
+</div>  
 </body>
-<script src="{% static 'ajax_request.js' %}"></script>
+<script src="{% static '/backend/getLibros.js' %}"></script>
 {% include 'footer.html' %}
 </html>
